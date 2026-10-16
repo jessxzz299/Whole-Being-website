@@ -1,0 +1,258 @@
+/* Basic settings */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #85a585;
+    background-color: #eef6ed;
+    line-height: 1.6;
+}
+
+
+/* Navigation */
+
+header {
+    background-color: #264230;
+    padding: 20px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: #9cb3a5;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+}
+
+.brand img {
+    width: 120px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #9cb3a5;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 80px 10%;
+  background-color: #dce8d5;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: 70px;
+    font-weight: normal;
+    color: #294536;
+    margin: 7px 0;
+}
+
+.hero p {
+    max-width: 500px;
+    margin-bottom: 15px;
+    font-size: large;
+    color: #4c7c62;
+}
+
+
+/* Small headings */
+
+.small-title {
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+
+/* Buttons */
+
+.button {
+    display: inline-block;
+    background-color: #31583f;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #1f3d2b;
+}
+
+
+/* About */
+
+.about {
+    text-align: center;
+    padding: 100px 15%;
+    background-image: url("img/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about h2,
+.contact h2 {
+    font-family: Georgia, serif;
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    color: #dfe4e1;
+}
+
+.about p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    color: #dfe4e1;
+}
+
+
+/* Courses */
+
+.courses {
+    text-align: center;
+    padding: 80px 8%;
+    background-color: #dce8d5;
+}
+
+.courses h2 {
+    color: #31583f;
+}
+
+.courses p {
+    color: #5a8168;
+}
+
+.course-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.course-card {
+    background-color: #ffffff;
+    padding: 35px;
+    width: 320px;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.course-card h3 {
+    color: #3e6e50;
+    margin-bottom: 15px;
+}
+
+.course-card h4 {
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+.see-more {
+    color: #31583f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Contact */
+
+.contact {
+    text-align: center;
+    padding: 80px 10%;
+    background-color: #31583f;
+    color: rgb(255, 255, 255);
+}
+
+.contact h2 {
+    color: white;
+}
+
+.contact p {
+    margin-bottom: 25px;
+    
+}
+
+.contact a {
+    background-color: #769e75;
+    padding: 35px;
+    width: 320px;
+}
+
+.contactinfo {
+    text-align: right;
+   margin-top: 50px;
+    padding: 15px 12%;
+    background-color: #31583f;
+    color: rgb(255, 255, 255);
+}
+
+
+
+.brand2 img {
+    text-align: right;
+    width: 120px;
+    height: 90px;
+    object-fit: contain;
+}
+
+/* Footer */
+
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #264230;
+    color: white;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .course-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
